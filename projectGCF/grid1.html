@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:darksalmon;
+            margin-bottom: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            max-width: 1000px;
+            padding: 10px;
+            height: 800px;
+            margin-bottom: 30px;
+        }
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .grid-item .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .class{
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Paris.jpg" alt="Paris">
+            <div class="caption">PARIS</div>
+        </div>
+        <div class="grid-item">
+            <img src="Rome.jpg" alt="Rome">
+            <div class="caption">ROME</div>
+        </div>
+        <div class="grid-item">
+            <img src="dubai.jpg" alt="Dubai">
+            <div class="caption">DUBAI</div>
+        </div>
+        <div class="grid-item">
+            <img src="Switzerland.jpg" alt="Switzerland">
+            <div class="caption">SWITZERLAND</div>
+        </div>
+        <div class="grid-item">
+            <img src="Bali.jpg" alt="Bali">
+            <div class="caption">BALI</div>
+        </div>
+        <div class="grid-item">
+            <img src="Maldives.jpg" alt="Maldives">
+            <div class="caption">MALDIVES</div>
+        </div>
+    </div>
+</body>
+</html>

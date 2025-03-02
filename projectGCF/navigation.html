@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guider</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: coral;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation Styles */
+        nav {
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul > li {
+            margin: 0 15px;
+        }
+
+        ul > li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        ul > li a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: chartreuse;
+            transform: scale(1.1);
+        }
+
+        /* Main Content Styles */
+        #ab {
+            height: 1000px;
+            background-image: url("tour1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0c0707;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TOURIST GUIDER</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="index.html">PLACES</a></li>
+                <li><a href="tickets booking.html">TICKETS BOOKING</a></li>
+                <li><a href="grid1.html">MORE INFORMATION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="ab"></div>
+    <footer>
+        &copy; 2025 ALL RIGHTS RESERVED
+    </footer>
+</body>
+</html>

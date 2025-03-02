@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5a3c7, #ff69b4);
+            text-align: center;
+        }
+
+        .container {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .container h2 {
+            color: #ff4081;
+            font-size: 24px;
+        }
+
+        .container p {
+            margin: 15px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .checkmark {
+            font-size: 50px;
+            color: #28a745;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .home-btn {
+            background: #ff4081;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            background: #e91e63;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="checkmark">✔</span>
+        <h2>Thank You for booking!</h2>
+        <p>Your ticket has been successfully booked. A confirmation email has been sent to you.</p>
+        <a href="index.html" class="home-btn">Back to Home</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="navigation.html">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1.log {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 85%;
+            padding: 10px 10px 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-box input:focus {
+            border-color: #6a11cb;
+        }
+
+        .input-box i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 20px;
+        }
+
+        .remember-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+        }
+
+        .forgot-password {
+            color: #6a11cb;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .but {
+            width: 100%;
+            padding: 10px;
+            background: #6a11cb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .but:hover {
+            background: #2575fc;
+        }
+
+        .no-account {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .switch-form {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        .switch-form:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form class="container" id="login-container">
+        <h1 class="log">Login</h1>
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="remember-box">
+            <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="remember-me"> 
+                <label for="remember-me"><h5>Remember me</h5></label>
+            </div>
+            <a class="forgot-password" href="#" onclick="forgotPassword()"><h5><b>Forgot Password</b></h5></a>
+        </div>
+        <button class="but" type="submit"><a href="navigation.html">Login</a></button>
+        <h5 class="no-account">Don't have an account? 
+            <a class="switch-form" onclick="showReg()" href="#"><b>Register</b></a>
+        </h5>
+    </form>
+
+    <script>
+        function forgotPassword() {
+            alert("Forgot Password functionality not implemented yet.");
+        }
+
+        function showReg() {
+            alert("Registration form not implemented yet.");
+        }
+    </script>
+</body>
+</html>
